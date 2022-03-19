@@ -13,7 +13,7 @@ contract WeStandWithUkraine is ERC721, Ownable, IERC2981 {
     string private contractUri;
 
     uint256 public maxSupply = 10;
-    uint256 public cost = 0.0005 ether;
+    uint256 public cost = 0.5 ether;
     uint256 public maxMintAmount = 3;
 
     string public baseURI;
