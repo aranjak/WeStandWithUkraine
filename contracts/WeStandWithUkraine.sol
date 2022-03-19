@@ -294,7 +294,7 @@ contract WeStandWithUkraine is ERC721, Ownable, IERC2981 {
      * @notice It allows the admins to get tokens sent to the contract
      * @param tokenAddress: the address of the token to withdraw
      * @param tokenAmount: the number of token amount to withdraw
-     * @dev Only callable by multisig wallet.
+     * @dev Only callable by contract owner.
      */
     function recoverTokens(address tokenAddress, uint256 tokenAmount) external onlyOwner {
         require(tokenAddress != address(0), "address can not be zero!");
