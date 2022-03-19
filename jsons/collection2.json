@@ -1,0 +1,22 @@
+{
+    "name": "We Stand With Ukraine",
+    "description": "I’m [Dmytro Dvurechenskyi](https://www.linkedin.com/in/dmytrodvurechenskyi), the CEO of [OpenGeeksLab](https://opengeekslab.com), a software engineering company that was born in Ukraine. We’re a passionate team of developers, designers, managers, and other tech experts, but at the moment, this isn’t the most important thing about us. 
+
+    We are Ukrainian. Ukraine has had its toll of challenges throughout history. And in every battle, every conflict, every revolution, we would always win thanks to the hearts and souls of our people. 
+    
+    Every Ukrainian is fighting today. And OpenGeeksLab has its own battlefield. 
+    
+    We’re launching an NFT collection to gather finances and help our country win our and the whole of Europe’s freedom. I will personally transfer all the funds to satisfy the needs of our army, civil defense, and humanitarian assistance.
+    
+    We’ll stand tall. Join us.
+    
+    Glory to Ukraine!
+    
+    Dmytro Dvurechenskyi,
+
+    The Chief Executive Officer of OpenGeeksLab.",
+    "image": "https://ogl-nft.s3.eu-central-1.amazonaws.com/standwithukraine/logo.png",
+    "external_link": "https://standwithukraine.opengeekslab.com",
+    "seller_fee_basis_points": 1000,
+    "fee_recipient": "0x9221c774A1516a1B3fBab95053ef17d544Fd3352"
+}
