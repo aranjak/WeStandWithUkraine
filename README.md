@@ -2,4 +2,5 @@
 2) npm install
 3) truffle compile
 4) set private key in truffle-config.js file
-5) truffle migrate --reset --network mainnet
+5) set infura key in truffle-config.js file
+6) truffle migrate --reset --network mainnet
