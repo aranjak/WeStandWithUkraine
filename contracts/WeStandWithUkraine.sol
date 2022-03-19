@@ -4,10 +4,12 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/interfaces/IERC2981.sol";
+import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
 contract WeStandWithUkraine is ERC721, Ownable, IERC2981 {
     using Strings for uint256;
     using Counters for Counters.Counter;
+    using SafeERC20 for IERC20;
 
     Counters.Counter private supply;
     string private contractUri;
@@ -286,5 +288,16 @@ contract WeStandWithUkraine is ERC721, Ownable, IERC2981 {
                     "onRoyaltiesReceived(address,address,uint256,address,uint256,bytes32)"
                 )
             );
+    }
+
+    /**
+     * @notice It allows the admins to get tokens sent to the contract
+     * @param tokenAddress: the address of the token to withdraw
+     * @param tokenAmount: the number of token amount to withdraw
+     * @dev Only callable by multisig wallet.
+     */
+    function recoverTokens(address tokenAddress, uint256 tokenAmount) external onlyOwner {
+        require(tokenAddress != address(0), "address can not be zero!");
+        IERC20(tokenAddress).safeTransfer(address(msg.sender), tokenAmount);
     }
 }
